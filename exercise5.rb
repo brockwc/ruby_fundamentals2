@@ -7,3 +7,6 @@ def temp_calc(temp_in_f)
 end
 
 puts "The temperature in superior Celsius is #{temp_calc(user_input)}"
+
+
+
