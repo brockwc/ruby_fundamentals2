@@ -6,4 +6,8 @@ grocery_list.each do |item|
 	puts "* " + item
 end
 
-puts "There are #{grocery_list.length}"
+msg = "There are #{grocery_list.length} items in your grocery list. "
+
+if grocery_list.include?("Bananas") then puts "#{msg} Also, you need to buy Bananas too."
+else puts "#{msg}Also, you don't need no 'nanners."
+end 
