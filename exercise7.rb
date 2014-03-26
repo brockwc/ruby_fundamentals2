@@ -17,10 +17,22 @@ end
 ## Displaying %5 class size increase
 puts "This is the size of the cohorts with 5% more students: #{students}"
 
+
 ## using the keys method
 puts students.keys
 
-## Delete cohort 2
-puts students.delete(:cohort2)
 
-puts students
+## Delete cohort 2
+students.delete(:cohort2)
+puts students.keys
+
+## Add all cohorts together
+def total_students(students)
+  total = 0
+  students.each { |k,v| total += v }
+  total
+end
+
+puts "The total number of students is #{total_students(students)}."
+
+
